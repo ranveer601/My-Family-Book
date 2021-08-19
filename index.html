@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>My Family Book</title>
+</head>
+<body>
+  <center>
+  <p class='header'>My Family Book</p>
+
+ <div>
+        <button type="button" onclick="nextslide()"> Next  </button>
+ </div>
+</center>
+</body>
+<script>
+  var images = [
+"https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg",
+"https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fbeautiful-woman-cartoon-girl-character-wearing-black-dress-isolated-flat-vector-design-130601350.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fbeautiful-woman-cartoon-girl-character-wearing-black-dress-isolated-flat-vector-design-image130601350&tbnid=YSTBofOsGXZLXM&vet=12ahUKEwjZp47w27zyAhWM3nMBHYcKBWAQMygKegUIARDTAQ..i&docid=g4JHKdGhVxRDHM&w=1131&h=1689&q=woman%20cartoon&hl=en&ved=2ahUKEwjZp47w27zyAhWM3nMBHYcKBWAQMygKegUIARDTAQ",
+"https://cdn1.vectorstock.com/i/1000x1000/79/30/business-man-cartoon-character-young-handsome-vector-14427930.jpg",
+"https://image.shutterstock.com/image-vector/senior-man-standing-old-wearing-260nw-1207046248.jpg",
+"https://i.pinimg.com/736x/8d/a3/a3/8da3a318085be5c0ca691bcdcfe3afcf.jpg",
+];
+
+var i = 0;
+function nextslide() { 
+ 
+   if(i == 9)
+     {
+       i=0;
+     }
+   
+    document.getElementById("album").src = images[i];
+  i++;
+ 
+}
+
+</script>
+</html>
